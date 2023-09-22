@@ -1,16 +1,16 @@
 import {
   Outlet,
-  Link,
 } from '@tanstack/react-router';
+
+import { Header } from '../components/sections/Header';
+import { Footer } from '../components/sections/Footer';
 
 export function Root() {
   return (
     <>
-      <div>
-        <Link to="/">Home</Link> <Link to="/about">About</Link>
-      </div>
-      <hr />
+      <Header />
       <Outlet />
+      <Footer />
     </>
   )
 }
